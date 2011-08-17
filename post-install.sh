@@ -8,3 +8,5 @@ chroot $1 sed -i 's/^[^#].*$/#&/g' /etc/init/tty1.conf
 chroot $1 addgroup airi bluetooth
 chroot $1 addgroup airi messagebus
 chroot $1 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B85B0133
+chroot $1 chmod +x /usr/sbin/hciup.sh
+chroot $1 rm /etc/ssh/ssh_host_*

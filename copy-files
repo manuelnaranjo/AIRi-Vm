@@ -1,3 +1,5 @@
 copy-dir/usage.txt /usr/share/confconsole/templates/usage.txt
 copy-dir/97-bluetooth.rules /lib/udev/rules.d/97-bluetooth.rules
+copy-dir/hciup.sh /usr/sbin/hciup.sh
+copy-dir/airi.conf /etc/init/airi.conf
 
