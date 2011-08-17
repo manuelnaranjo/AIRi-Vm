@@ -1,0 +1,11 @@
+deb $mirror $suite #slurp
+#echo ' '.join($components)
+
+deb $updates_mirror $suite-updates #slurp
+#echo ' '.join($components)
+
+deb $security_mirror $suite-security #slurp
+#echo ' '.join($components)
+
+deb http://ppa.launchpad.net/manuel-aircable/airi/ubuntu natty main
+deb http://ppa.launchpad.net/manuel-aircable/ppa/ubuntu jaunty main

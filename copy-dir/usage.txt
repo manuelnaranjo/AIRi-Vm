@@ -1,0 +1,11 @@
+You may access this AIRcable appliance over the
+network using the following methods:
+
+AIRi-Server: http://$ipaddr
+Management: ssh airi@$ipaddr, password aircable
+
+For more infomation visit Ubuntu Website
+             http://www.ubuntu.com
+
+AIRcable Website
+             http://www.aircable.net
