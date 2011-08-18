@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-TARGET="ubuntu-$(date +%s)"
+TARGET="AIRi-VirtualBox-$(date +%s)"
 CWD=$(pwd)
 
 sudo ./vmbuilder vbox ubuntu \
@@ -12,3 +12,5 @@ sudo ./vmbuilder vbox ubuntu \
     -v --debug -d ${TARGET} 2>&1 | tee build.log
 
 sudo chown -R $(whoami):$(whoami) $TARGET
+
+zip -9 -r $TARGET.zip $TARGET
