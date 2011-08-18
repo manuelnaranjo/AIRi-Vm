@@ -3,7 +3,7 @@
 TARGET="ubuntu-$(date +%s)"
 CWD=$(pwd)
 
-sudo vmbuilder vmserver ubuntu \
+sudo ./vmbuilder vmserver ubuntu \
     -c vmbuilder.cfg \
     --templates=templates \
     --copy $CWD/copy-files \
